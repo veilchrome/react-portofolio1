@@ -4,6 +4,7 @@ import './index.scss'
 import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect } from 'react'
+import Logo from './Logo'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -58,6 +59,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   )
 }
