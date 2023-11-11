@@ -9,7 +9,7 @@ import {
   faYoutube,
   faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faBars, faUser } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -24,6 +24,14 @@ const Sidebar = () => {
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
       </nav>
       <ul>
@@ -80,6 +88,13 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className="hamburger-icon"
+      />
     </div>
   )
 }
