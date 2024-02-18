@@ -5,7 +5,6 @@ const CardGrid = () => {
   return (
     <>
       <div className="main">
-        <h1>Project</h1>
         <ul className="cards">
           <li className="cards_item">
             <div className="card">

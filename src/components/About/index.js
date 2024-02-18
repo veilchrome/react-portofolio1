@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
+  faNodeJs,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
@@ -37,11 +37,9 @@ const About = () => {
             />
           </h1>
           <p>
-            Hi im Selamet Saputra Junior Web Developer who like to learn how to
-            code and be Front end Developer, i like to read an article about
-            Front End Developer digital literacy, and self learning. Practice
-            more more and more are best teacher because i believe the experience
-            are the best teacher
+            Hi im Selamet Saputra Junior Fullstack Developer, i like to read an
+            article about Front End or Back End digital literacy and i usually
+            read the documentation of the tech stack i used.
           </p>
           <p align="LEFT">
             I'm quiet confident, naturally curious, and perpetually working on
@@ -49,15 +47,15 @@ const About = () => {
           </p>
           <p>
             If I need to define myself in one sentence that i like to use the
-            moderen technology , i like to design using Adobe Illustrator and
-            Photoshop, GFX and fan of IEM and Music.
+            moderen technology , i can use Adobe Illustrator and Photoshop to
+            design for my own website Content
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faNodeJs} color="#6cc24a" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

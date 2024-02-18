@@ -20,10 +20,18 @@ const Portfolio = () => {
 
   return (
     <>
-      <div>
-        <p className="about">Lorem Ipsum</p>
+      <div className="portofolio">
+        <h1 className="about">
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={nameProject}
+            idx={15}
+          />
+        </h1>
+
+        <CardGrid />
       </div>
-      <CardGrid />
+
       <Loader type="pacman" />
     </>
   )
