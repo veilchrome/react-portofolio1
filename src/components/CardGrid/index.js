@@ -1,5 +1,7 @@
 import React from 'react'
 import './index.scss'
+import myImage1 from '../../assets/images/Artboard 1.png'
+import myImage2 from '../../assets/images/Artboard 2.png'
 
 const CardGrid = () => {
   return (
@@ -9,36 +11,28 @@ const CardGrid = () => {
           <li className="cards_item">
             <div className="card">
               <div className="card_image">
-                <img
-                  src="https://picsum.photos/500/300/?image=10"
-                  alt="gambar2"
-                />
+                <img src={myImage2} alt="gambar2" />
               </div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
-                <p className="card_text">
-                  Demo of pixel perfect pure CSS simple responsive card grid
-                  layout
-                </p>
-                <button className="btn card_btn">Read More</button>
+                <h2 className="card_title">Emet Webmania</h2>
+                <p className="card_text">An Film Searcher using API</p>
+                <button className="btn card_btn">
+                  <a href="https://webfilmwsearch-api-s5.vercel.app/">Demo</a>
+                </button>
               </div>
             </div>
           </li>
           <li className="cards_item">
             <div className="card">
               <div className="card_image">
-                <img
-                  src="https://picsum.photos/500/300/?image=5"
-                  alt="gambar1"
-                />
+                <img src={myImage1} alt="gambar1" />
               </div>
               <div className="card_content">
-                <h2 className="card_title">Card Grid Layout</h2>
-                <p className="card_text">
-                  Demo of pixel perfect pure CSS simple responsive card grid
-                  layout
-                </p>
-                <button className="btn card_btn">Read More</button>
+                <h2 className="card_title">Animanga Search</h2>
+                <p className="card_text">Using API from Anime Jikan V4.</p>
+                <button className="btn card_btn">
+                  <a href="https://animanga-search.vercel.app/">Demo</a>
+                </button>
               </div>
             </div>
           </li>
